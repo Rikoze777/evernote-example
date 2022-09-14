@@ -7,17 +7,12 @@
 
 Далее в корне папки необходимо создать пустой `.env` файл и записать туда следующие переменные:
 ```
-*EVERNOTE_CONSUMER_KEY=`Consumer Key`
-
-*EVERNOTE_CONSUMER_SECRET=`Consumer Secret`
-
-*EVERNOTE_PERSONAL_TOKEN=`API Token`
-
-*JOURNAL_TEMPLATE_NOTE_GUID= GUID вашего шаблона
-
-*JOURNAL_NOTEBOOK_GUID=GUID записи для создания заметок
-
-*INBOX_NOTEBOOK_GUID=GUID записи для получения заметок
+EVERNOTE_CONSUMER_KEY=`Consumer Key`
+EVERNOTE_CONSUMER_SECRET=`Consumer Secret`
+EVERNOTE_PERSONAL_TOKEN=`API Token`
+JOURNAL_TEMPLATE_NOTE_GUID= GUID вашего шаблона
+JOURNAL_NOTEBOOK_GUID=GUID записи для создания заметок
+INBOX_NOTEBOOK_GUID=GUID записи для получения заметок
 ```
 Python3 должен быть уже установлен. Затем используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:
 
