@@ -3,10 +3,10 @@
 
 ## Как установить
   Для начала работы вам необходимо получить `Consumer Key` и `Consumer Secret` [здесь](https://dev.evernote.com/doc/). 
-А также `API token` [здесь](https://dev.evernote.com/get-token/)
+А также `API token` [здесь](https://dev.evernote.com/get-token/).
 
-Далее в корне папки необходимо создать пустой `.env` файл и записать туда следующие переменные
-
+Далее в корне папки необходимо создать пустой `.env` файл и записать туда следующие переменные:
+```
 *EVERNOTE_CONSUMER_KEY=`Consumer Key`
 
 *EVERNOTE_CONSUMER_SECRET=`Consumer Secret`
@@ -18,7 +18,7 @@
 *JOURNAL_NOTEBOOK_GUID=GUID записи для создания заметок
 
 *INBOX_NOTEBOOK_GUID=GUID записи для получения заметок
-
+```
 Python3 должен быть уже установлен. Затем используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:
 
 `pip install -r requirements.txt`
@@ -30,7 +30,7 @@ Python3 должен быть уже установлен. Затем испол
 
 ### list_notebooks.py
 
-Команда `python3 list_notebooks.py` - вывдет `id` заметок и их название. Полученные данные можно подставить `JOURNAL_NOTEBOOK_GUID` и `INBOX_NOTEBOOK_GUID`
+Команда `python3 list_notebooks.py` - вывдет `id` заметок и их название. Полученные данные можно подставить в`JOURNAL_NOTEBOOK_GUID` и `INBOX_NOTEBOOK_GUID`.
 
 Пример успешного запуска (id в примере выдуман):
 ```
